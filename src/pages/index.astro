@@ -1,0 +1,121 @@
+---
+import { Image } from "astro:assets";
+
+import Logo1 from "../img/logo1.svg"
+
+import ps from "../img/cactus-ps2.jpg"
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<meta name="generator" content={Astro.generator} />
+		<title>Blossom Oasis</title>
+	</head>
+	<body class=" w-5/6 mx-auto bg-gray-950 text-white font-noto">
+
+		<section class=" min-h-screen">
+			<nav class=" sm:flex items-center justify-between mt-4">
+
+				<div class=" flex items-center justify-center">
+					<Image src={Logo1} alt="logo" width={40} />
+					<h2 class=" font-bold ml-2 text-lg">Blossom Oasis</h2>
+				</div>
+	
+				<div class=" hidden sm:flex">
+					<a class=" ml-3" href="#">Home</a>
+					<a class= "ml-3" href="#">Categories</a>
+					<a class=" ml-3" href="#">Pricing</a>
+					<a class=" ml-3" href="#">Contact Us</a>
+				</div>
+	
+				<div class=" hidden :flex">
+					<button class=" border border-white text-white px-6 py-2 rounded-xl">Log In</button>
+					<button class=" border border-black text-black bg-white px-6 py-2 rounded-xl">Start Planting</button>
+				</div>
+	
+			</nav>
+	
+			<div class=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+				<h1 class=" text-6xl w-full"><span class=" text-orange-400 font-bold">Blossom Oasis</span> Potted Plants </h1>
+				<p class=" mt-10 font-regular text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis impedit
+					nostrum nisi neque possimus recusandae ad quam vel, porro corrupti nulla suscipit enim eum laboriosam voluptas
+					explicabo sequi magnam illum.
+				</p>
+				<button class=" bg-white text-black px-8 py-3 font-bold rounded-xl mt-10">SHOP CATEGORIES</button>
+				<p class=" mt-10 font-regular text-lg">We are also accepting <span class=" text-green-300 font-bold">custom</span> offers for plants not in stock</p>
+			</div>
+	
+		</section>
+		
+		<section class=" mt-10">
+			<div class=" flex items-center justify-between">
+				<h2 class=" text-lg">Plants</h2>
+				<h2 class=" text-lg">See more</h2>
+			</div>
+
+			<div class=" flex justify-center items-center mt-10">
+				<input class=" py-3 px-14 rounded-lg text-black" type="search" placeholder=" Search by Category" />
+			</div>
+
+			<div class=" grid grid-cols-1 sm:grid sm:grid-cols-3 mt-10 mb-10 gap-4">
+
+				<div class=" mt-10 h-auto w-72 border border-white text-black font-medium mx-auto rounded-xl bg-gray-400">
+					<Image class=" mx-auto mt-2 mb-2 rounded-xl" src={ps} alt="image" width={280} />
+					<h2 class=" text-center">Aloe Vera</h2>
+					<span class=" mt-2 flex items-center justify-center text-blue-900 p-1 w-20 mx-auto bg-blue-300 rounded-xl text-sm">Succulent</span>
+					<h2 class=" font-bold text-xl text-center mt-2">$19</h2>
+					<button class=" font-bold flex justify-center items-center w-full rounded-xl py-2 bg-black text-white">BUY</button>
+				</div>
+
+				<div class=" mt-10 h-auto w-72 border border-white text-black font-medium mx-auto rounded-xl bg-gray-400">
+					<Image class=" mx-auto mt-2 mb-2 rounded-xl" src={ps} alt="image" width={280} />
+					<h2 class=" text-center">Christmas Cactus</h2>
+					<span class=" mt-2 flex items-center justify-center text-green-900 p-1 w-20 mx-auto bg-green-300 rounded-xl text-sm">Cacti</span>
+					<h2 class=" font-bold text-xl text-center mt-2">$21</h2>
+					<button class=" font-bold flex justify-center items-center w-full rounded-xl py-2 bg-black text-white">BUY</button>
+				</div>
+
+				<div class=" mt-10 h-auto w-72 border border-white text-black font-medium mx-auto rounded-xl bg-gray-400">
+					<Image class=" mx-auto mt-2 mb-2 rounded-xl" src={ps} alt="image" width={280} />
+					<h2 class=" text-center">Ficus</h2>
+					<span class=" mt-2 flex items-center justify-center text-red-900 p-1 w-20 mx-auto bg-red-300 rounded-xl text-sm">Bonsai</span>
+					<h2 class=" font-bold text-xl text-center mt-2">$7</h2>
+					<button class=" font-bold flex justify-center items-center w-full rounded-xl py-2 bg-black text-white">BUY</button>
+				</div>
+
+				<div class=" mt-10 h-auto w-72 border border-white text-black font-medium mx-auto rounded-xl bg-gray-400">
+					<Image class=" mx-auto mt-2 mb-2 rounded-xl" src={ps} alt="image" width={280} />
+					<h2 class=" text-center">Basil</h2>
+					<span class=" mt-2 flex items-center justify-center text-orange-900 p-1 w-20 mx-auto bg-orange-300 rounded-xl text-sm">Herbs</span>
+					<h2 class=" font-bold text-xl text-center mt-2">$15</h2>
+					<button class=" font-bold flex justify-center items-center w-full rounded-xl py-2 bg-black text-white">BUY</button>
+				</div>
+
+				<div class=" mt-10 h-auto w-72 border border-white text-black font-medium mx-auto rounded-xl bg-gray-400">
+					<Image class=" mx-auto mt-2 mb-2 rounded-xl" src={ps} alt="image" width={280} />
+					<h2 class=" text-center">African Violet</h2>
+					<span class=" mt-2 flex items-center justify-center text-purple-900 p-1 w-20 mx-auto bg-purple-300 rounded-xl text-sm">Flowering</span>
+					<h2 class=" font-bold text-xl text-center mt-2">$15</h2>
+					<button class=" font-bold flex justify-center items-center w-full rounded-xl py-2 bg-black text-white">BUY</button>
+				</div>
+
+				<div class=" mt-10 h-auto w-72 border border-white text-black font-medium mx-auto rounded-xl bg-gray-400">
+					<Image class=" mx-auto mt-2 mb-2 rounded-xl" src={ps} alt="image" width={280} />
+					<h2 class=" text-center">Savannah Grass</h2>
+					<span class=" mt-2 flex items-center justify-center text-sky-900 p-1 w-20 mx-auto bg-sky-300 rounded-xl text-sm">Grass</span>
+					<h2 class=" font-bold text-xl text-center mt-2">$10</h2>
+					<button class=" font-bold flex justify-center items-center w-full rounded-xl py-2 bg-black text-white">BUY</button>
+				</div>				
+
+			</div>
+		</section>
+		
+	</body>
+</html>
